@@ -8,6 +8,10 @@ const sequelize = new Sequelize("cityrodb", "root", "", {
   port: 3306,
 });
 
+/**The main class for the database connection related stuff.
+*@param address: String The address for the databse. localhost or ip.
+*@param port: Integer The port number of the dabase address.
+   */
 class dbConnect {
   address;
   port
@@ -29,7 +33,10 @@ class dbConnect {
 Here is waht is meant to be the class for checking connection for better seperation of the classes
     
 }*/
-
+/**The main class for controling of the database items.
+*@param address: String The address for the databse. localhost or ip.
+*@param port: Integer The port number of the dabase address.
+   */
 class MetroTehranManager extends dbConnect {
   async appendModel() {
     try {
