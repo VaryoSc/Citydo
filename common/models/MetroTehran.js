@@ -11,7 +11,7 @@ const MetroTehran = {
                3_Two digit number defining the station's number.`,
   },
   lineNumber: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING(10),
     comment: `Is the predefined line of the station`,
   },
   stationName: {
