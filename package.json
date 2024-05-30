@@ -1,0 +1,37 @@
+{
+  "name": "cityro",
+  "version": "0.8.50",
+  "description": "A simple site to predict public transport times",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ajv": "^8.13.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.4",
+    "node-xlsx": "^0.24.0",
+    "sequelize": "^6.37.2",
+    "xlsx": "^0.20.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaryoSc/Cityro.git"
+  },
+  "keywords": [
+    "cityro",
+    "ptransport",
+    "publictransport",
+    "metro"
+  ],
+  "author": "Varyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VaryoSc/Cityro/issues"
+  },
+  "homepage": "https://github.com/VaryoSc/Cityro#readme"
+}

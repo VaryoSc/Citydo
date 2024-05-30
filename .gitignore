@@ -1,0 +1,12 @@
+node_modules/
+
+package-lock.json
+yarn.lock
+test.js
+.trunk/
+.env
+.env.test
+.etc
+
+# IDE Cache Files
+.idea/
