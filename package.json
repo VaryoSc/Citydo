@@ -14,9 +14,7 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.4",
-    "node-xlsx": "^0.24.0",
     "sequelize": "^6.37.2",
-    "xlsx": "^0.20.2"
   },
   "repository": {
     "type": "git",

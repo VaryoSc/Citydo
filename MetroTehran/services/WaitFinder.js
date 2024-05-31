@@ -10,13 +10,13 @@ class MasterWaiter {
           1: [330, 370, 390, 660, 930, 1180, 1234, 1290, 1320],
           Fre1: [20, 10, 5, 6, 5, 6, 8, 10],
           // Kahrizak
-          2: [330, 582, 842, 1107, 1162, 1210, 1260, 1320],
+          2: [360, 582, 842, 1107, 1162, 1210, 1260, 1320],
           Fre2: [5, 6, 5, 6, 8, 10, 15],
         },
         Thu: {
           1: [330, 370, 390, 560, 1146, 1270, 1320],
           Fre1: [20, 10, 5, 6, 7, 10],
-          2: [330, 542, 1080, 1210, 1260, 1320],
+          2: [360, 542, 1080, 1210, 1260, 1320],
           Fre2: [5, 6, 7, 10, 15],
         },
         Fri: {
@@ -28,67 +28,67 @@ class MasterWaiter {
       },
       2: {
         Wed: {
-          //sadeghieh
-          1: [330, 350, 380, 590, 920, 1130, 1178, 1250, 1290, 1320],
-          Fre2: [10, 6, 5, 6, 5, 6, 8, 10, 15],
           //farhangsara
-          2: [330, 380, 415, 625, 955, 1180, 1208, 1280, 1320],
+          1: [330, 380, 415, 625, 955, 1180, 1208, 1280, 1320],
           Fre1: [10, 7, 5, 6, 5, 7, 8, 10],
+          //sadeghieh
+          2: [330, 350, 380, 590, 920, 1130, 1178, 1250, 1290, 1320],
+          Fre2: [10, 6, 5, 6, 5, 6, 8, 10, 15],
         },
         Thu: {
-          1: [330, 350, 380, 590, 1124, 1220, 1290, 1320],
-          Fre2: [10, 6, 5, 6, 8, 10, 15],
-          2: [330, 415, 625, 1180, 1220, 1320],
+          1: [330, 415, 625, 1180, 1220, 1320],
           Fre1: [10, 7, 5, 7, 8, 10],
+          2: [330, 350, 380, 590, 1124, 1220, 1290, 1320],
+          Fre2: [10, 6, 5, 6, 8, 10, 15],
         },
         Fri: {
-          1: [360, 450, 1250, 1290, 1320],
-          Fre1: [10, 7, 10, 15],
-          2: [365, 455, 1250, 1320],
-          Fre2: [10, 7, 10],
+          1: [365, 455, 1250, 1320],
+          Fre1: [10, 7, 10],
+          2: [360, 450, 1250, 1290, 1320],
+          Fre2: [10, 7, 10, 15],
         },
       },
       3: {
         Wed: {
-          //Azadegan
-          1: [330, 420, 500, 588, 868, 910, 1140, 1170, 1198, 1270, 1320],
-          Fre1: [7, 5, 7, 8, 7, 6, 7, 8, 10],
           //Ghaem
-          2: [340, 360, 487, 567, 587, 899, 934, 994, 1160, 1208, 1320],
-          Fre2: [10, 7, 5, 7, 8, 7, 6, 5, 6, 7],
+          1: [340, 360, 487, 567, 587, 899, 934, 994, 1160, 1208, 1320],
+          Fre1: [10, 7, 5, 7, 8, 7, 6, 5, 6, 7],
+          //Azadegan
+          2: [330, 420, 500, 588, 868, 910, 1140, 1170, 1198, 1270, 1320],
+          Fre2: [7, 5, 7, 8, 7, 6, 7, 8, 10],
         },
         Thu: {
-          1: [330, 1230, 1290, 1320],
-          Fre1: [10, 9, 10, 15],
-          2: [340, 390, 1200, 1320],
-          Fre2: [10, 9, 10],
+          1: [340, 390, 1200, 1320],
+          Fre1: [10, 9, 10],
+          2: [330, 1230, 1290, 1320],
+          Fre2: [10, 9, 10, 15],
         },
         Fri: {
-          1: [360, 450, 1290, 1320],
-          Fre1: [15, 12, 10, 15],
-          2: [360, 456, 1290, 1320],
-          Fre2: [12, 10, 15],
+          1: [360, 456, 1290, 1320],
+          Fre1: [12, 10, 15],
+          2: [360, 450, 1290, 1320],
+          Fre2: [15, 12, 10, 15],
         },
       },
       4: {
         Wed: {
-          //Alame
-          1: [330, 370, 590, 950, 1170, 1188, 1220, 1320],
-          Fre1: [6, 5, 6, 5, 6, 8, 10],
           //Kolahdooz
-          2: [330, 540, 900, 1140, 1188, 1220, 1320],
-          Fre2: [5, 6, 5, 6, 8, 10],
+          1: [330, 540, 900, 1140, 1188, 1220, 1320],
+          Fre1: [5, 6, 5, 6, 8, 10],
+          //Alame
+          2: [330, 370, 590, 950, 1170, 1188, 1220, 1320],
+          Fre2: [6, 5, 6, 5, 6, 8, 10],
         },
         Thu: {
-          1: [330, 350, 380, 553, 1165, 1190, 1290, 1320],
-          Fre1: [10, 8, 5, 6, 8, 10, 15],
-          2: [330, 510, 1116, 1180, 1320],
-          Fre2: [5, 6, 8, 10],
+          1: [330, 510, 1116, 1180, 1320],
+          Fre1: [5, 6, 8, 10],
+          2: [330, 350, 380, 553, 1165, 1190, 1290, 1320],
+          Fre2: [10, 8, 5, 6, 8, 10, 15],
         },
         Fri: {
-          1: [360, 450, 1200, 1290, 1320],
+          1: [360, 400, 1180, 1260, 1320],
           Fre1: [10, 7, 10, 15],
-          2: [360, 400, 1180, 1260, 1320],
+          2: [360, 450, 1200, 1290, 1320],
           Fre2: [10, 7, 10, 15],
         },
       },
@@ -96,16 +96,16 @@ class MasterWaiter {
         Wed: {
           //Sadeghieh
           1: [330, 360, 380, 570, 870, 1200, 1260, 1320],
-          Fre2: [30, 20, 10, 15, 10, 15, 20],
+          Fre1: [30, 20, 10, 15, 10, 15, 20],
           //Golshahr
           2: [330, 540, 795, 1085, 1200, 1260, 1320],
-          Fre1: [10, 15, 10, 15, 20, 30],
+          Fre2: [10, 15, 10, 15, 20, 30],
         },
         Thu: {
           1: [330, 360, 380, 570, 840, 1140, 1200, 1320],
-          Fre2: [30, 20, 10, 15, 10, 15, 20],
+          Fre1: [30, 20, 10, 15, 10, 15, 20],
           2: [320, 540, 765, 1065, 1140, 1260, 1320],
-          Fre1: [10, 15, 10, 15, 20, 30],
+          Fre2: [10, 15, 10, 15, 20, 30],
         },
         Fri: {
           1: [375, 975, 1230, 1320],
@@ -116,18 +116,18 @@ class MasterWaiter {
       },
       6: {
         Wed: {
-          //Arman
-          1: [330, 360, 610, 904, 1185, 1320],
-          Fre1: [15, 12.5, 14, 11.5, 15],
           //Dolat-Abad
-          2: [330, 360, 560, 910, 1190, 1280, 1320],
-          Fre2: [15, 12.5, 14, 11.5, 15, 20],
+          1: [330, 360, 560, 910, 1190, 1280, 1320],
+          Fre1: [15, 12.5, 14, 11.5, 15, 20],
+          //Arman
+          2: [330, 360, 610, 904, 1185, 1320],
+          Fre2: [15, 12.5, 14, 11.5, 15],
         },
         Thu: {
-          1: [330, 360, 610, 904, 1185, 1320],
-          Fre1: [15, 12.5, 14, 11.5, 15],
-          2: [330, 360, 560, 910, 1190, 1280, 1320],
-          Fre2: [15, 12.5, 14, 11.5, 15, 20],
+          1: [330, 360, 560, 910, 1190, 1280, 1320],
+          Fre1: [15, 12.5, 14, 11.5, 15, 20],
+          2: [330, 360, 610, 904, 1185, 1320],
+          Fre2: [15, 12.5, 14, 11.5, 15],
         },
         Fri: {
           1: [360, 1260, 1320],
@@ -138,45 +138,45 @@ class MasterWaiter {
       },
       7: {
         Wed: {
-          //Ketab
-          1: [330, 600, 900, 1200, 1320],
-          Fre1: [11.5, 15, 11.5, 15],
           //Basij
-          2: [335, 592, 892, 1192, 1320],
+          1: [335, 592, 892, 1192, 1320],
+          Fre1: [11.5, 15, 11.5, 15],
+          //Ketab
+          2: [330, 600, 900, 1200, 1320],
           Fre2: [11.5, 15, 11.5, 15],
         },
         Thu: {
-          1: [330, 600, 900, 1200, 1320],
+          1: [335, 592, 892, 1192, 1320],
           Fre1: [11.5, 15, 11.5, 15],
-          2: [335, 592, 892, 1192, 1320],
+          2: [330, 600, 900, 1200, 1320],
           Fre2: [11.5, 15, 11.5, 15],
         },
         Fri: {
-          1: [360, 1320],
+          1: [367, 1327],
           Fre1: [15],
-          2: [367, 1327],
+          2: [360, 1320],
           Fre2: [15],
         },
       },
       e1: {
         Wed: {
-          //Parand
-          1: [390, 1110],
-          Fre1: [120],
           //Shahed
-          2: [330, 1050],
+          1: [330, 1050],
+          Fre1: [120],
+          //Parand
+          2: [390, 1110],
           Fre2: [120],
         },
         Thu: {
-          1: [390, 1110],
+          1: [330, 1050],
           Fre1: [120],
-          2: [330, 1050],
+          2: [390, 1110],
           Fre2: [120],
         },
         Fri: {
-          1: [390, 1110],
+          1: [330, 1050],
           Fre1: [120],
-          2: [330, 1050],
+          2: [390, 1110],
           Fre2: [120],
         },
       },
@@ -204,32 +204,32 @@ class MasterWaiter {
       },
       e5: {
         Wed: {
-          //Hashtgard
-          1: [360, 1095],
-          Fre1: [90],
           //Ensheaab Golshahr
-          2: [320, 1050],
-          Fre2: [90],
-        },
-        Thu: {
           1: [320, 1050],
           Fre1: [90],
+          //Hashtgard
           2: [360, 1095],
           Fre2: [90],
         },
-        Fri: {
-          1: [410, 1050],
+        Thu: {
+          1: [360, 1095],
           Fre1: [90],
-          2: [450, 1095],
+          2: [320, 1050],
+          Fre2: [90],
+        },
+        Fri: {
+          1: [450, 1095],
+          Fre1: [90],
+          2: [410, 1050],
           Fre2: [90],
         },
       },
       exp5: {
-        //Sadeghieh-Express
-        1: [900, 1200],
-        Fre1: [20],
         //Golshahr-Express
-        2: [320, 540],
+        1: [320, 540],
+        Fre1: [20],
+        //Sadeghieh-Express
+        2: [900, 1200],
         Fre2: [20],
       },
     };
@@ -249,21 +249,22 @@ class MasterWaiter {
     let timeCurrent = timeHour * 60 + timeMinute;
     let result = [],
       startStation = parseInt(startStation_),
-      baseTimeObject = this.line[lineNumber].Wed[des],
-      timeFrequencyObject = this.line[lineNumber].Wed["Fre" + des];
-    timeCurrent -= startStation;
-    try{
-    if (weekday == 5) {
-      (baseTimeObject = this.line[lineNumber].Fri[des]),
-        (timeFrequencyObject = this.line[lineNumber].Fri["Fre" + des]);
-    } else if (weekday == 4) {
-      (baseTimeObject = this.line[lineNumber].Thu[des]),
-        (timeFrequencyObject = this.line[lineNumber].Thu["Fre" + des]);
+      baseTimeObject,
+      timeFrequencyObject;
+      timeCurrent -= startStation;
+    try {
+      (baseTimeObject = this.line[lineNumber].Wed[des]),
+        (timeFrequencyObject = this.line[lineNumber].Wed["Fre" + des]);
+      if (weekday == 5) {
+        (baseTimeObject = this.line[lineNumber].Fri[des]),
+          (timeFrequencyObject = this.line[lineNumber].Fri["Fre" + des]);
+      } else if (weekday == 4) {
+        (baseTimeObject = this.line[lineNumber].Thu[des]),
+          (timeFrequencyObject = this.line[lineNumber].Thu["Fre" + des]);
+      }
+    } catch (error) {
+      return result;
     }
-  }
-  catch(error){
-    throw new Error(`Station does not operate today --- ${error}`)
-  }
     let ind = baseTimeObject.findIndex((i) => i > timeCurrent);
     for (let index = 0; index < 5; index++) {
       ind = baseTimeObject.findIndex(
@@ -281,7 +282,7 @@ class MasterWaiter {
       }
       //The start of the train interval for this station
       result[index] =
-        baseTimeObject[ind - 1] >= 0 ? baseTimeObject[ind - 1] : 0;
+        baseTimeObject[ind - 1] >= 330 ? baseTimeObject[ind - 1] : 330;
       //Adds intervals in order, to the station until you get the next arriving station
       while (
         result[index] <
@@ -298,7 +299,7 @@ class MasterWaiter {
    * @param {Number} lineNumber: The line for both stations
    * @param {Number} startStation: the basetime of the starting station
    * @param {Number} finalStation: the basetime of the final station
-   * @param {string} des: The first 3 letters of the line destination
+   * @param {String} des: The first 3 letters of the line destination
    * @returns {Array} An array containing the arriving time of the train on the first and seccond stations respectively
    */
 
@@ -307,7 +308,7 @@ class MasterWaiter {
       resFinal = [],
       startStation = parseInt(startStation_),
       finalStation = parseInt(finalStation_);
-      resStart = this.getEntryTime(lineNumber, startStation, des);
+    resStart = this.getEntryTime(lineNumber, startStation, des);
     for (let index = 0; index < 5; index++) {
       resFinal[index] = resStart[index] + (finalStation - startStation);
     }
