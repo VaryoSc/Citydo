@@ -21,6 +21,8 @@ router.get("/getstatime", MetroTehranController.getEntryTime);
 
 router.get("/getwaitime", MetroTehranController.getWaitTime);
 
+router.get("/getmultime", MetroTehranController.getMulTime);
+
 router.post(
   "/create",
   [

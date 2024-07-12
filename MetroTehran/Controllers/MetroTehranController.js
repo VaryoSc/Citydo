@@ -2,10 +2,10 @@ const MetroTehran = require("../../common/models/MetroTehran.js"),
 WaitFinder = require("../services/WaitFinder.js");
 
 module.exports = {
-    getStation: (req, res) => {
+    getStation: async (req, res) => {
       const {stationCode} = "stationCode" in req.body ? req.body : req.query;
   
-      MetroTehran.findStation({ stationCode: stationCode })
+      await MetroTehran.findStation({ stationCode: stationCode })
         .then((Station) => {
           return res.status(200).json({
             status: true,
@@ -20,12 +20,12 @@ module.exports = {
         });
     },
 
-    createStation: (req, res) => {
+    createStation: async (req, res) => {
       const {
         body: payload,
       } = req;
   
-      MetroTehran.createStation(payload)
+      await MetroTehran.createStation(payload)
         .then((Station) => {
           return res.status(200).json({
             status: true,
@@ -40,7 +40,7 @@ module.exports = {
         });
     },
   
-    updateStation: (req, res) => {
+    updateStation: async (req, res) => {
       const {
         body: payload,
       } = req;
@@ -56,7 +56,7 @@ module.exports = {
         });
       }
   
-      MetroTehran.updateStation({ stationCode: payload.stationCode }, payload)
+      await MetroTehran.updateStation({ stationCode: payload.stationCode }, payload)
         .then(() => {
           return MetroTehran.findStation({ stationCode: payload.stationCode });
         })
@@ -74,10 +74,10 @@ module.exports = {
         });
     },
   
-    deleteStation: (req, res) => {
+    deleteStation: async (req, res) => {
       const payload = Object.keys(req.body).length ?  req.body.stationCode : req.query.stationCode;
   
-      MetroTehran.deleteStation({ stationCode: stationCode })
+      await MetroTehran.deleteStation({ stationCode: payload.stationCode })
         .then((numberOfEntriesDeleted) => {
           return res.status(200).json({
             status: true,
@@ -94,8 +94,8 @@ module.exports = {
         });
     },
   
-    getAllStation: (req, res) => {
-      MetroTehran.findAllStation(req.query)
+    getAllStation: async (req, res) => {
+      await MetroTehran.findAllStation(req.query)
         .then((MetroTehran) => {
           return res.status(200).json({
             status: true,
@@ -146,4 +146,21 @@ module.exports = {
       };
     },
 
+    getMulTime: async (req, res) => {
+      const payload = Object.keys(req.body).length ?  req.body : req.query;
+
+      // const time =payload.time ? WaitFinder.getMultiTime(payload.entry, payload.exit, payload.time) : WaitFinder.getMultiTime(payload.entry, payload.exit);
+       const time = await WaitFinder.getMulTime(payload.entry, payload.exit, payload.time, payload.count);
+      if (time) {
+        return res.status(200).json({
+          status: true,
+          data: time,
+        });
+      }
+      else {
+        return res.status(500).json({
+          status: false,
+        });
+      };
+    },
     };  

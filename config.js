@@ -1,4 +1,6 @@
-const { Sequelize } = require("sequelize");
+
+const fs = require('fs'),
+ { Sequelize } = require("sequelize");
 require('dotenv').config()
 const red = process.env.PORT
 module.exports = {
@@ -11,10 +13,11 @@ module.exports = {
       OWNER: 'owner',
       
     },
-    sequelize: new Sequelize(process.env.DB, process.env.USER, process.env.PASSWORD, {
-      host: process.env.HOST,
+    sequelize: new Sequelize(process.env.POSTGRES_DB, process.env.POSTGRES_USER, fs.readFileSync(process.env.POSTGRES_PASSWORD_FILE, 'utf8'), {
+      host: process.env.POSTGRES_HOST,
       dialect: process.env.DIALECT,
-      logging: false,
+      logging: process.env.BUILD_TARGET == 'dev' ? console.log() : false,
+      port: process.env.DB_PORT,
       dialectOptions: {
         charset: 'utf8mb4',
       },

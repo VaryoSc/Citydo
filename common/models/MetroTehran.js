@@ -38,32 +38,32 @@ const MetroTehran = {
 
 module.exports = {
   initialise: (sequelize) => {
-    this.MetroTehran = sequelize.define("MetroTehran", MetroTehran);
+    this.MetroTehran = sequelize.define("metrotehran", MetroTehran);
   },
 
-  createStation: (station) => {
+  createStation: async (station) => {
     return this.MetroTehran.create(station);
   },
 
-  findStation: (query) => {
+  findStation: async (query) => {
     return this.MetroTehran.findOne({
       where: query,
     });
   },
 
-  updateStation: (query, updatedValue) => {
+  updateStation: async (query, updatedValue) => {
     return this.MetroTehran.update(updatedValue, {
       where: query,
     });
   },
 
-  findAllStation: (query) => {
+  findAllStation: async (query) => {
     return this.MetroTehran.findAll({
       where: query,
     });
   },
 
-  deleteStation: (query) => {
+  deleteStation: async (query) => {
     return this.MetroTehran.destroy({
       where: query,
     });

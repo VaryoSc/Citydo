@@ -1,12 +1,17 @@
 node_modules/
+npm-debug.log
+yarn-error.log
 
 package-lock.json
 yarn.lock
 test.js
 .trunk/
-.env
-.env.test
+.env*
 .etc
+cacheManager.js
+.tmp
+.git
+db/
 
 # IDE Cache Files
 .idea/
