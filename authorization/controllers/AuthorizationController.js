@@ -1,11 +1,11 @@
 const jwt = require("jsonwebtoken"),
-  crypto = require("crypto"),
+  crypto = require("node:crypto"),
   Users = require("../../common/models/Users"),
   { roles, jwtSecret, jwtExpirationInSeconds } = require("../../config");
 
 /**
-*Generates an Access Token using username and userId for the user's authentication
-*/
+ *Generates an Access Token using username and userId for the user's authentication
+ */
 const generateAccessToken = (username, userId) => {
   return jwt.sign(
     {
@@ -15,18 +15,15 @@ const generateAccessToken = (username, userId) => {
     jwtSecret,
     {
       expiresIn: jwtExpirationInSeconds,
-    },
+    }
   );
 };
 
-// Encrypts the password using SHA256 Algorithm, for enhanced security of the password
+/*
+* Encrypts the password using SHA256 Algorithm
+*/
 const encryptPassword = (password) => {
-  // We will hash the password using SHA256 Algorithm before storing in the DB
-  // Creating SHA-256 hash object
-  const hash = crypto.createHash("sha256");
-  // Update the hash object with the string to be encrypted
-  hash.update(password);
-  // Get the encrypted value in hexadecimal format
+  const hash = crypto.createHash("sha256").update(password);
   return hash.digest("hex");
 };
 
@@ -38,7 +35,7 @@ module.exports = {
     const role = roles.USER;
 
     Users.createUser(
-      Object.assign(payload, { password: encryptedPassword, role: role }),
+      Object.assign(payload, { password: encryptedPassword, role: role })
     )
       .then((user) => {
         // Generating an AccessToken for the user, which will be

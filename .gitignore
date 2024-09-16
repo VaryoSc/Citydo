@@ -1,12 +1,20 @@
 node_modules/
+npm-debug.log
+yarn-error.log
 
 package-lock.json
 yarn.lock
 test.js
 .trunk/
-.env
-.env.test
+.env*
 .etc
+cacheManager.js
+MetroTehran/
+common/models/MetroTehran.js
+.tmp
+.git
+db/
+.dockerignore
 
 # IDE Cache Files
 .idea/

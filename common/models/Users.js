@@ -35,7 +35,7 @@ const Users ={
       
   module.exports = { 
         initialise: (sequelize) => {
-          this.Users = sequelize.define("Users", Users);
+          this.Users = sequelize.define("users", Users);
         },
       
         createUser: (user) => {
