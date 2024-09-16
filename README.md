@@ -11,6 +11,6 @@ Any feedback is welcome as long as you remember this isn't the actual website he
 
 ## Acknowledgements
 
- - davoodrb who is the designer for the sites frontend
+ - davoodrb who is the designer for the site's frontend
  https://github.com/davoodrb
 
