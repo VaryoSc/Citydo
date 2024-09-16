@@ -14,7 +14,6 @@ common/models/MetroTehran.js
 .tmp
 .git
 db/
-.dockerignore
 
 # IDE Cache Files
 .idea/
