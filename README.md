@@ -1,9 +1,9 @@
 
 # Citydo, the site to save your travel times
 
-This here is mostly the draft ideas that were meant to be implemented but were deemed unnecessary or cut-out for lack of time.
+This here is the MVP of Citydo that was meant to be used at production.
 
-The main parts of the site namely the arrival and travel time module and the in use model are left out for security reasons; 
+The main parts of the site are the arrival and travel time module;
 The rest are shown here mostly for demonstrational porpuses.
 
 Any feedback is welcome as long as you remember this isn't the actual website here.
