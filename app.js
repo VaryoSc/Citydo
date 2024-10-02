@@ -7,12 +7,13 @@ const express = require("express"),
   MetroTehran = require("./common/models/MetroTehran"),
   WaitFinder = require("./MetroTehran/services/WaitFinder.js"),
   cors = require("cors"),
-  { port, sequelize } = require("./config");
-const PORT = process.env.PORT || port;
+  { port: PORT, sequelize } = require("./config");
 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({
+  extended: true
+}));
 
 Users.initialise(sequelize);
 MetroTehran.initialise(sequelize);
@@ -29,7 +30,7 @@ sequelize
     app.use("/mtehran", MetroTehranRoutes);
 
     app.listen(PORT, () => {
-      console.log("Server Listening on PORT:", port);
+      console.log("Server Listening on PORT:", PORT);
     });
   })
   .catch((err) => {

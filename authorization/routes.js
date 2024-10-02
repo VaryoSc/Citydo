@@ -1,7 +1,8 @@
 const router = require("express").Router();
 
 // Controller Imports
-const AuthorizationController = require("./controllers/AuthorizationController");
+const AuthorizationController = require("./controllers/AuthorizationController"),
+  ServerStatusController = require("./controllers/ServerStatusController");
 
 // Middleware Imports
 const SchemaValidationMiddleware = require("../common/middlewares/SchemaValidationMiddleware");
@@ -10,16 +11,18 @@ const SchemaValidationMiddleware = require("../common/middlewares/SchemaValidati
 const registerPayload = require("./schemas/registerPayload");
 const loginPayload = require("./schemas/loginPayload");
 
+//Routes plannig and commands
 router.post(
   "/signup",
   [SchemaValidationMiddleware.verify(registerPayload)],
-  AuthorizationController.register
+  AuthorizationController.register,
 );
 
 router.post(
   "/login",
   [SchemaValidationMiddleware.verify(loginPayload)],
-  AuthorizationController.login
+  AuthorizationController.login,
 );
 
+router.get("/check", ServerStatusController.check);
 module.exports = router;
